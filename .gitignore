@@ -1,0 +1,26 @@
+# Hugo output
+/public/
+/resources/_gen/
+
+# Local build/dependencies
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor junk
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+.idea/
+.vscode/
+*.log
+
+# Env/local configs
+.env
+.env.*
