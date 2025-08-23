@@ -1,26 +1,29 @@
-# Hugo output
+# Hugo build artifacts
 /public/
 /resources/_gen/
+/.hugo_build.lock
 
-# Local build/dependencies
+# Node / Tailwind tooling
 node_modules/
-package-lock.json
-pnpm-lock.yaml
-yarn.lock
+# (Site repo) ✅ Commit your package-lock.json for reproducible builds
+# (Theme-only repo) You may choose to ignore lockfiles.
 
-# OS junk
+# If you ever output CSS via CLI into assets/static, ignore the generated files:
+assets/css/*.generated.css
+assets/css/tailwind.css
+static/css/tailwind.css
+
+# OS cruft
 .DS_Store
 Thumbs.db
 
-# Editor junk
-*.swp
-*.swo
-*.sublime-workspace
-*.sublime-project
+# Editors / logs
 .idea/
 .vscode/
+*.swp
+*.swo
 *.log
 
-# Env/local configs
+# Env files (if you ever add them)
 .env
 .env.*
