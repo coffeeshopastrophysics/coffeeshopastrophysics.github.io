@@ -19,12 +19,28 @@
                   {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
                 </div>
                 <div class="pointer-events-auto md:hidden">
-                  <button type="button" class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+                  <button type="button" onclick="toggleMobileMenu()" id="mobile-menu-button" class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
                     Menu
                     <svg viewBox="0 0 8 6" aria-hidden="true" class="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400">
                       <path d="M1.75 1.75 4 4.25l2.25-2.5" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                   </button>
+                  <div id="mobile-menu-backdrop" class="fixed inset-0 z-40 bg-zinc-800/40 backdrop-blur-sm hidden"></div>
+                  <div id="mobile-menu" class="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 shadow-lg transition-all duration-150 scale-95 opacity-0 pointer-events-none dark:bg-zinc-900 dark:ring-zinc-800">
+                    <nav class="mt-2">
+                      <ul class="-my-2 divide-y divide-zinc-100 text-base text-zinc-900 dark:divide-zinc-100/5 dark:text-zinc-100">
+                        {{ with index site.Menus "main" }}
+                          {{ range . }}
+                            <li>
+                              <a href="{{ .URL }}" class="block py-2 transition hover:text-teal-500 dark:hover:text-teal-400">
+                                {{ .Name }}
+                              </a>
+                            </li>
+                          {{ end }}
+                        {{ end }}
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
               </div>
               <div class="flex justify-end md:flex-1">
@@ -36,3 +52,35 @@
     </div>
   </div>
 </header>
+
+<script>
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const backdrop = document.getElementById('mobile-menu-backdrop');
+  
+  if (menu.classList.contains('opacity-0')) {
+    // Show menu
+    backdrop.classList.remove('hidden');
+    menu.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
+    menu.classList.add('opacity-100', 'scale-100');
+  } else {
+    // Hide menu
+    menu.classList.remove('opacity-100', 'scale-100');
+    menu.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+    setTimeout(() => {
+      backdrop.classList.add('hidden');
+    }, 150);
+  }
+}
+
+// Close mobile menu when clicking backdrop
+document.addEventListener('click', function(event) {
+  const menu = document.getElementById('mobile-menu');
+  const button = document.getElementById('mobile-menu-button');
+  const backdrop = document.getElementById('mobile-menu-backdrop');
+  
+  if (event.target === backdrop || (!menu.contains(event.target) && !button.contains(event.target) && !menu.classList.contains('opacity-0'))) {
+    toggleMobileMenu();
+  }
+});
+</script>
