@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark h-full antialiased">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="Coffee Shop Astrophysics - A community for astrophysics talks and discussions" />
   {{ $css := resources.Get "css/main.css" | postCSS (dict "inlineImports" true) }}
   {{ if hugo.IsProduction }}
     {{ $css = $css | minify | fingerprint }}
@@ -11,11 +13,18 @@
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   {{ end }}
 </head>
-<body class="min-h-screen bg-gray-50 text-gray-900">
-  {{ partial "header.html" . }}
-  <main class="container mx-auto px-4 py-10">
-    {{ block "main" . }}{{ end }}
-  </main>
-  {{ partial "footer.html" . }}
+<body class="h-full bg-zinc-50 dark:bg-black">
+  <div class="fixed inset-0 flex justify-center sm:px-8">
+    <div class="flex w-full max-w-7xl lg:px-8">
+      <div class="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20"></div>
+    </div>
+  </div>
+  <div class="relative flex w-full flex-col">
+    {{ partial "header.html" . }}
+    <main class="flex-auto">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+  </div>
 </body>
 </html>

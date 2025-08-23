@@ -1,24 +1,32 @@
 @import "tailwindcss";
 
-body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+/* Custom styles to extend Tailwind */
+html {
+  scroll-behavior: smooth;
 }
 
-header {
-  border-bottom: 1px solid #222;
-  margin-bottom: 1rem;
+/* Dark mode handling */
+.dark {
+  color-scheme: dark;
 }
 
-footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+/* Fix for gradient background */
+.bg-linear-to-r {
+  background: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-a {
-  color: #00e;
-  text-decoration: none;
+/* Custom animation for smooth transitions */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
 }

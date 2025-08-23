@@ -6,6 +6,9 @@ module.exports = {
     "./content/**/*.{md,html}",
     "./assets/**/*.{js,ts}",
   ],
+  darkMode: 'class',
   theme: { extend: {} },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };

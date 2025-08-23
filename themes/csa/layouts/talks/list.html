@@ -12,150 +12,194 @@
 
   {{ $talks := .Site.Data.talks }}
   {{ if not $talks }}
-    <section class="space-y-8">
-      <h1 class="text-3xl font-semibold">Past CSA Talks</h1>
-      <p class="text-gray-600">No talks data found. Add <code>data/talks.yaml</code>.</p>
-    </section>
-    {{ end }}
-  {{ if not $talks }}{{/* early exit */}}{{ return }}{{ end }}
+  <div class="sm:px-8 mt-9">
+    <div class="mx-auto w-full max-w-7xl lg:px-8">
+      <div class="relative px-4 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-2xl lg:max-w-5xl">
+          <header class="max-w-2xl">
+            <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+              CSA Talks
+            </h1>
+            <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+              No talks data found. Add <code class="text-sm bg-zinc-100 px-1 py-0.5 rounded dark:bg-zinc-800">data/talks.yaml</code>.
+            </p>
+          </header>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ else }}
 
   {{/* --------- Prepare lists --------- */}}
   {{ $now := now }}
   {{ $sorted := sort $talks "date" "desc" }}
   {{ $.Scratch.Set "past" (slice) }}
-
-    {{ $.Scratch.Set "upcoming" (slice) }}
+  {{ $.Scratch.Set "upcoming" (slice) }}
   {{ range $sorted }}
     {{ $t := time .date }}
     {{ if lt $t $now }}
       {{ $.Scratch.Add "past" (slice .) }}
-      {{ else }}
-        {{ $.Scratch.Add "upcoming" (slice .) }}
+    {{ else }}
+      {{ $.Scratch.Add "upcoming" (slice .) }}
     {{ end }}
   {{ end }}
 
   {{ $past := $.Scratch.Get "past" }}
+  {{ $upcoming := $.Scratch.Get "upcoming" }}
 
-    {{ $upcoming := $.Scratch.Get "upcoming" }}
-  <section class="space-y-10">
-    <section class="space-y-10">
-      <header>
-        <h1 class="text-3xl font-semibold">Upcoming CSA Talks</h1>
-        {{ if eq (len $upcoming) 0 }}
-          <p class="mt-2 text-gray-600">No upcoming talks scheduled.</p>
-        {{ end }}
-      </header>
-
-      {{ if gt (len $upcoming) 0 }}
-        <div class="space-y-8">
-          <ul class="mt-2 grid gap-6 md:grid-cols-2">
-          {{ range $upcoming }}
-            {{ $t := time .date }}
-            <li class="rounded-2xl border p-5 bg-white">
-              <div class="flex items-start justify-between gap-4">
-                <h3 class="text-xl font-medium">
-                  {{ with .title }}
-                    <span>{{ . }}</span>
-                  {{ else }}
-                    <span>Untitled talk</span>
-                  {{ end }}
-                </h3>
-                <time class="shrink-0 text-sm text-gray-500" datetime="{{ $t }}">
-                  {{ $t.Format "Jan 2, 2006" }}
-                </time>
-              </div>
-
-              {{ with .speakers }}
-                <p class="mt-2 text-sm text-gray-700">
-                  <span class="font-medium">Speakers:</span> {{ delimit . ", " }}
-                </p>
-              {{ end }}
-
-              {{ with .venue }}
-                <p class="text-sm text-gray-700"><span class="font-medium">Venue:</span> {{ . }}</p>
-              {{ end }}
-
-              {{ with .abstract }}
-                <p class="mt-3 text-sm text-gray-600">{{ . }}</p>
-              {{ end }}
-
-              <div class="mt-4 flex flex-wrap gap-3 text-sm">
-                {{ with .slides }}
-                  <a class="underline" href="{{ . }}" target="_blank" rel="noopener">Slides</a>
+  {{/* --------- Upcoming Talks Section --------- */}}
+  {{ if gt (len $upcoming) 0 }}
+  <div class="sm:px-8 mt-9">
+    <div class="mx-auto w-full max-w-7xl lg:px-8">
+      <div class="relative px-4 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-2xl lg:max-w-5xl">
+          <header class="max-w-2xl">
+            <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+              Upcoming Talks
+            </h1>
+          </header>
+          <div class="mt-16 sm:mt-20">
+            <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+              <div class="flex max-w-3xl flex-col space-y-16">
+                {{ range $upcoming }}
+                  {{ $t := time .date }}
+                  <article class="md:grid md:grid-cols-4 md:items-baseline">
+                    <div class="md:col-span-3 group relative flex flex-col items-start">
+                      <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50"></div>
+                        <span class="relative z-10">
+                          {{ with .title }}
+                            {{ . }}
+                          {{ else }}
+                            Untitled talk
+                          {{ end }}
+                        </span>
+                      </h2>
+                      <time class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500" datetime="{{ $t }}">
+                        {{ $t.Format "January 2, 2006" }}
+                      </time>
+                      
+                      {{ with .speakers }}
+                        <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                          <span class="font-medium">Speakers:</span> {{ delimit . ", " }}
+                        </p>
+                      {{ end }}
+                      
+                      {{ with .venue }}
+                        <p class="relative z-10 text-sm text-zinc-600 dark:text-zinc-400">
+                          <span class="font-medium">Venue:</span> {{ . }}
+                        </p>
+                      {{ end }}
+                      
+                      {{ with .abstract }}
+                        <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">{{ . }}</p>
+                      {{ end }}
+                      
+                      <div class="relative z-10 mt-4 flex flex-wrap gap-3 text-sm">
+                        {{ with .slides }}
+                          <a class="text-teal-500 underline hover:text-teal-600 dark:text-teal-400 dark:hover:text-teal-300" href="{{ . }}" target="_blank" rel="noopener">Slides</a>
+                        {{ end }}
+                        {{ with .video }}
+                          <a class="text-teal-500 underline hover:text-teal-600 dark:text-teal-400 dark:hover:text-teal-300" href="{{ . }}" target="_blank" rel="noopener">Video</a>
+                        {{ end }}
+                      </div>
+                    </div>
+                    <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500" datetime="{{ $t }}">
+                      {{ $t.Format "January 2, 2006" }}
+                    </time>
+                  </article>
                 {{ end }}
-                {{ with .video }}
-                  <a class="underline" href="{{ . }}" target="_blank" rel="noopener">Video</a>
-                {{ end }}
               </div>
-            </li>
-          {{ end }}
-          </ul>
+            </div>
+          </div>
         </div>
-      {{ end }}
-    </section>
-    <header>
-      <h1 class="text-3xl font-semibold">Past CSA Talks</h1>
-      {{ if eq (len $past) 0 }}
-        <p class="mt-2 text-gray-600">No past talks yet.</p>
-      {{ end }}
-    </header>
-
-    {{ if gt (len $past) 0 }}
-      {{/* Group by year while iterating */}}
-      {{ $.Scratch.Delete "currentYear" }}
-      <div class="space-y-8">
-        {{ range $past }}
-          {{ $t := time .date }}
-          {{ $year := time.Format "2006" $t }}
-          {{ if ne $year ($.Scratch.Get "currentYear") }}
-            {{ if $.Scratch.Get "currentYear" }}
-              </ul>
-            {{ end }}
-            <h2 class="text-2xl font-medium mt-4">{{ $year }}</h2>
-            <ul class="mt-2 grid gap-6 md:grid-cols-2">
-            {{ $.Scratch.Set "currentYear" $year }}
-          {{ end }}
-
-          <li class="rounded-2xl border p-5 bg-white">
-            <div class="flex items-start justify-between gap-4">
-              <h3 class="text-xl font-medium">
-                {{ with .title }}
-                  <span>{{ . }}</span>
-                {{ else }}
-                  <span>Untitled talk</span>
-                {{ end }}
-              </h3>
-              <time class="shrink-0 text-sm text-gray-500" datetime="{{ $t }}">
-                {{ $t.Format "Jan 2, 2006" }}
-              </time>
-            </div>
-
-            {{ with .speakers }}
-              <p class="mt-2 text-sm text-gray-700">
-                <span class="font-medium">Speakers:</span> {{ delimit . ", " }}
-              </p>
-            {{ end }}
-
-            {{ with .venue }}
-              <p class="text-sm text-gray-700"><span class="font-medium">Venue:</span> {{ . }}</p>
-            {{ end }}
-
-            {{ with .abstract }}
-              <p class="mt-3 text-sm text-gray-600">{{ . }}</p>
-            {{ end }}
-
-            <div class="mt-4 flex flex-wrap gap-3 text-sm">
-              {{ with .slides }}
-                <a class="underline" href="{{ . }}" target="_blank" rel="noopener">Slides</a>
-              {{ end }}
-              {{ with .video }}
-                <a class="underline" href="{{ . }}" target="_blank" rel="noopener">Video</a>
-              {{ end }}
-            </div>
-          </li>
-        {{ end }}
-        </ul>
       </div>
-    {{ end }}
-  </section>
+    </div>
+  </div>
+  {{ end }}
+
+  {{/* --------- Past Talks Section --------- */}}
+  {{ if gt (len $past) 0 }}
+  <div class="sm:px-8 {{ if gt (len $upcoming) 0 }}mt-16 sm:mt-20{{ else }}mt-9{{ end }}">
+    <div class="mx-auto w-full max-w-7xl lg:px-8">
+      <div class="relative px-4 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-2xl lg:max-w-5xl">
+          <header class="max-w-2xl">
+            <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+              Past Talks
+            </h1>
+          </header>
+          <div class="mt-16 sm:mt-20">
+            <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+              <div class="flex max-w-3xl flex-col space-y-16">
+                {{ $.Scratch.Delete "currentYear" }}
+                {{ range $past }}
+                  {{ $t := time .date }}
+                  {{ $year := $t.Format "2006" }}
+                  {{ if ne $year ($.Scratch.Get "currentYear") }}
+                    {{ if $.Scratch.Get "currentYear" }}
+                      <!-- Year separator -->
+                    {{ end }}
+                    <div class="md:grid md:grid-cols-4 md:items-baseline">
+                      <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 md:col-span-4">{{ $year }}</h2>
+                    </div>
+                    {{ $.Scratch.Set "currentYear" $year }}
+                  {{ end }}
+                  
+                  <article class="md:grid md:grid-cols-4 md:items-baseline">
+                    <div class="md:col-span-3 group relative flex flex-col items-start">
+                      <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50"></div>
+                        <span class="relative z-10">
+                          {{ with .title }}
+                            {{ . }}
+                          {{ else }}
+                            Untitled talk
+                          {{ end }}
+                        </span>
+                      </h3>
+                      <time class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500" datetime="{{ $t }}">
+                        {{ $t.Format "January 2, 2006" }}
+                      </time>
+                      
+                      {{ with .speakers }}
+                        <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                          <span class="font-medium">Speakers:</span> {{ delimit . ", " }}
+                        </p>
+                      {{ end }}
+                      
+                      {{ with .venue }}
+                        <p class="relative z-10 text-sm text-zinc-600 dark:text-zinc-400">
+                          <span class="font-medium">Venue:</span> {{ . }}
+                        </p>
+                      {{ end }}
+                      
+                      {{ with .abstract }}
+                        <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">{{ . }}</p>
+                      {{ end }}
+                      
+                      <div class="relative z-10 mt-4 flex flex-wrap gap-3 text-sm">
+                        {{ with .slides }}
+                          <a class="text-teal-500 underline hover:text-teal-600 dark:text-teal-400 dark:hover:text-teal-300" href="{{ . }}" target="_blank" rel="noopener">Slides</a>
+                        {{ end }}
+                        {{ with .video }}
+                          <a class="text-teal-500 underline hover:text-teal-600 dark:text-teal-400 dark:hover:text-teal-300" href="{{ . }}" target="_blank" rel="noopener">Video</a>
+                        {{ end }}
+                      </div>
+                    </div>
+                    <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500" datetime="{{ $t }}">
+                      {{ $t.Format "January 2, 2006" }}
+                    </time>
+                  </article>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+
+  {{ end }}
 {{ end }}
