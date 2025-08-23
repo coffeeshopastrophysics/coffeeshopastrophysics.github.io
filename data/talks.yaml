@@ -1,0 +1,23 @@
+- title: "NEW Talk XXX"
+  date: 2025-10-14T13:00:00-05:00
+  speakers: ["Alex ss (LIGO)"]
+  venue: "PSci 1ss70"
+  slides: ""
+  video: ""
+  abstract: "Intro to ss inference with PyMC/JAX."
+
+- title: "Learning from O4b: Population Inference"
+  date: 2025-05-02T15:30:00-05:00
+  speakers: ["Jane Doe (UWM)", "Cory Chu (UWM)"]
+  venue: "PSci 170"
+  slides: "https://example.com/slides.pdf"
+  video: "https://youtu.be/xxxx"
+  abstract: "Updates on GPPOP and O4b prospects…"
+
+- title: "Hierarchical Models for CBC Populations"
+  date: 2025-03-14T13:00:00-05:00
+  speakers: ["Alex Smith (LIGO)"]
+  venue: "PSci 170"
+  slides: ""
+  video: ""
+  abstract: "Intro to population inference with PyMC/JAX."

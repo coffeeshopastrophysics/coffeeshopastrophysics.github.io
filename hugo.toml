@@ -2,3 +2,24 @@ baseURL = 'http://localhost:3000'
 languageCode = 'en-us'
 title = 'Coffee Shop Astrophysics'
 theme = 'csa'
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Talks'
+    pageRef = '/talks'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 30
+
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 40
