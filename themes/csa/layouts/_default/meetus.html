@@ -1,0 +1,93 @@
+{{ define "main" }}
+  <div class="sm:px-8 mt-9">
+    <div class="mx-auto w-full max-w-7xl lg:px-8">
+      <div class="relative px-4 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-2xl lg:max-w-5xl">
+          <header class="max-w-2xl">
+            <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+              {{ .Title }}
+            </h1>
+            <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+              Meet the passionate researchers and students who make up the Coffee Shop Astrophysics community. We're a diverse group of graduate students, postdocs, and faculty united by our curiosity about the universe.
+            </p>
+          </header>
+
+          <div class="mt-16 sm:mt-20">
+            <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 mb-8">Current Members</h2>
+            
+            {{ $members := .Site.Data.members }}
+            {{ if not $members }}
+            <div class="text-center py-8">
+              <p class="text-zinc-600 dark:text-zinc-400">No members data found. Add <code class="text-sm bg-zinc-100 px-1 py-0.5 rounded dark:bg-zinc-800">data/members.yaml</code>.</p>
+            </div>
+            {{ else }}
+            
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+              {{ range $members }}
+              <div class="bg-white rounded-2xl shadow-sm ring-1 ring-zinc-100 p-8 dark:bg-zinc-900 dark:ring-zinc-800">
+                <div class="flex items-start space-x-4">
+                  <div class="flex-shrink-0">
+                    <img class="size-36 rounded-full bg-zinc-300 dark:bg-zinc-600 object-cover" src="{{ .image }}" alt="{{ .name }}">
+                  </div>
+                  <div class="flex-1">
+                    <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">{{ .name }}</h3>
+                    <p class="mt-1 text-sm text-teal-600 dark:text-teal-400">{{ .title }}</p>
+                    {{ with .bio }}
+                      <p class="mt-4 text-sm text-zinc-600 dark:text-zinc-400">{{ . }}</p>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+            
+            {{ end }}
+
+            <!-- Research Areas -->
+            <div class="mt-16">
+              <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 mb-8">Our Research Focus</h2>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="p-6 rounded-lg ring-1 ring-zinc-100 dark:ring-zinc-800">
+                  <h3 class="font-semibold text-zinc-800 dark:text-zinc-100 mb-2">Gravitational Wave Astronomy</h3>
+                  <p class="text-sm text-zinc-600 dark:text-zinc-400">Searching for and analyzing signals from merging black holes and neutron stars</p>
+                </div>
+                <div class="p-6 rounded-lg ring-1 ring-zinc-100 dark:ring-zinc-800">
+                  <h3 class="font-semibold text-zinc-800 dark:text-zinc-100 mb-2">Pulsar Science</h3>
+                  <p class="text-sm text-zinc-600 dark:text-zinc-400">Timing pulsars for gravitational wave detection through NANOGrav</p>
+                </div>
+                <div class="p-6 rounded-lg ring-1 ring-zinc-100 dark:ring-zinc-800">
+                  <h3 class="font-semibold text-zinc-800 dark:text-zinc-100 mb-2">Computational Astrophysics</h3>
+                  <p class="text-sm text-zinc-600 dark:text-zinc-400">Simulating extreme astronomical events</p>
+                </div>
+                <div class="p-6 rounded-lg ring-1 ring-zinc-100 dark:ring-zinc-800">
+                  <h3 class="font-semibold text-zinc-800 dark:text-zinc-100 mb-2">Data Analysis</h3>
+                  <p class="text-sm text-zinc-600 dark:text-zinc-400">Developing new techniques for signal detection and parameter estimation</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hall of Fame -->
+            <div class="mt-16">
+              <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 mb-6">Hall of Fame</h2>
+              <div class="prose prose-zinc dark:prose-invert">
+                <p>We're proud of our alumni who have gone on to exciting careers in academia, industry, and beyond. Coffee Shop Astrophysics was founded with the vision of creating an inclusive, collaborative community for astrophysics researchers, and we celebrate all the amazing people who have been part of this journey.</p>
+                <p>Our Hall of Fame includes 24+ former members who have contributed to the growth and success of our research community, including our founder Sydney Chamberlin, along with distinguished researchers like Laura Nuttall, Megan DeCesar, and many others who continue to make their mark in astrophysics and related fields.</p>
+              </div>
+            </div>
+
+            <!-- Community Culture -->
+            <div class="mt-16 p-8 rounded-2xl bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20">
+              <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 mb-4">Community & Culture</h2>
+              <p class="text-zinc-600 dark:text-zinc-400">
+                Coffee Shop Astrophysics is more than just a research group – we're a community that values collaboration, mentorship, and the joy of scientific discovery. Whether you're interested in the technical aspects of gravitational wave detection or the broader questions about our universe, there's a place for you here.
+              </p>
+              <p class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">
+                Coffee Shop Astrophysics - Where curiosity meets discovery over a great cup of coffee.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}

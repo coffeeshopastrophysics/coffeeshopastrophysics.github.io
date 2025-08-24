@@ -1,0 +1,53 @@
+- name: "Pratyusava Baral"
+  title: "PhD Student"
+  image: "/images/profile-temp.jpg"
+  bio: "I started graduate school at UWM in 2020, and my research is focused on studying pulsars and their applications to detecting nanohertz gravitational waves as part of the North American Nanohertz Observatory for Gravitational Waves (NANOGrav) collaboration. My hobbies include biking, playing the harp, and hiking."
+
+- name: "Leith Benali"
+  title: "PhD Student"
+  image: "/images/profile-temp.jpg"
+  bio: "I joined the PhD program at UWM in 2020 to study gravitational wave astrophysics. My research focuses on improving searches for gravitational waves from compact binary coalescences, and understanding systematic effects that could impact these searches. I enjoy running by the lake, reading, and caring for my house plants."
+
+- name: "Cory Chu"
+  title: "Graduate Student"
+  image: "/images/profile-temp.jpg"
+  bio: "My research interests include Gravitational Wave Physics and Cosmology, particularly focusing on data analysis and parameter estimation of gravitational wave signals. Beyond research, I'm a Blogger and a Filmmaker, passionate about science communication and storytelling."
+
+- name: "Ronan Humphrey"
+  title: "Graduate Student"
+  image: "/images/profile-temp.jpg"
+  bio: "I study computational astrophysics, performing simulations of events such as tidal disruptions and supernovae. My work involves understanding the physics behind these extreme astronomical phenomena through numerical modeling. I like baking bread, sewing, and playing video games."
+
+- name: "Shashwat Sardesai"
+  title: "5th Year PhD Student"
+  image: "/images/profile-temp.jpg"
+  bio: "I am a 5th year graduate student studying gravitational waves from compact binary coalescences. My research involves developing and improving techniques for detecting and analyzing gravitational wave signals from merging black holes and neutron stars. I enjoy sci-fi movies, video games and writing."
+
+- name: "Simon Yeung"
+  title: "Graduate Student"
+  image: "/images/profile-temp.jpg"
+  bio: "My research focuses on searching and timing of pulsars under the NANOGrav project, using radio telescopes to detect these cosmic lighthouses and study their precise timing patterns. This work contributes to our efforts to detect low-frequency gravitational waves. I enjoy cooking, practicing yoga, dancing, reading, and traveling."
+
+- name: "Lulu Agazie"
+  title: "Graduate Student"
+  image: "/images/profile-temp.jpg"
+
+- name: "Amanda Baylor"
+  title: "Graduate Student"
+  image: "/images/profile-temp.jpg"
+
+- name: "Sarah Villanova Borges"
+  title: "Graduate Student"
+  image: "/images/profile-temp.jpg"
+
+- name: "Gabe Freedman"
+  title: "Graduate Student"
+  image: "/images/profile-temp.jpg"
+
+- name: "Tamal RoyChowdhury"
+  title: "Graduate Student"
+  image: "/images/profile-temp.jpg"
+
+- name: "Laila Vleeschower"
+  title: "Graduate Student"
+  image: "/images/profile-temp.jpg"

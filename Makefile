@@ -1,3 +1,3 @@
 run-local:
-	hugo server -D
+	touch postcss.config.js && hugo server -D
 	
