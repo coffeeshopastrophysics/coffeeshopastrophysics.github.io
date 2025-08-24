@@ -1,23 +1,45 @@
 - title: "NEW Talk XXX"
   date: 2025-10-14T13:00:00-05:00
-  speakers: ["Alex ss (LIGO)"]
-  venue: "PSci 1ss70"
+  speakers: ["XXX"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
   slides: ""
   video: ""
-  abstract: "Intro to ss inference with PyMC/JAX."
+  abstract: "XXX"
 
-- title: "Learning from O4b: Population Inference"
-  date: 2025-05-02T15:30:00-05:00
-  speakers: ["Jane Doe (UWM)", "Cory Chu (UWM)"]
-  venue: "PSci 170"
-  slides: "https://example.com/slides.pdf"
-  video: "https://youtu.be/xxxx"
-  abstract: "Updates on GPPOP and O4b prospects…"
 
-- title: "Hierarchical Models for CBC Populations"
-  date: 2025-03-14T13:00:00-05:00
-  speakers: ["Alex Smith (LIGO)"]
-  venue: "PSci 170"
+# 2025 Spring
+
+- title: "Why does the Earth get Angry?"
+  date: 2025-02-22T13:00:00-05:00
+  speakers: ["Akash Anumarlapudi", "Pratyusava Baral"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  slides: ""
+  video: "https://www.youtube.com/watch?v=_m-mCHCS6Pc"
+  abstract: "On 11 March 2011, Japan was hit by an earthquake, 9.1 on the Richter scale, which triggered a 15 meter high tsunami. This chain of events resulted in a nuclear meltdown that lasted for several days, now referred as the Fukushima Daiichi accident. Why did this happen? And more generally, why and how does any earthquake, tsunami, or even a volcanic eruption happen? Understanding these natural calamities entails understanding the structure and dynamical evolution of the Earth. From stardust, 4.6 billion years ago to a highly structured planet arranged by a core, a mantle, and a crust in the present day, the evolution of our planet hides many interesting secrets essential for life. Join us on February 22 at Anodyne as we dive into the science behind the formation of our planet, its current day structure, and its continuous movement resulting in the formation of continents."
+
+- title: "Cosmic Light Show"
+  date: 2025-03-29T13:00:00-05:00
+  speakers: ["Sarah Villanova Borges", "Shashwat Sardesai", "Prashant Sukumar"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  slides: ""
+  video: "https://www.youtube.com/watch?v=zn7KT1a47wo"
+  abstract: "Auroras are a fascinating phenomenon that arise from the interaction of solar wind and a magnetic field. At the poles, where the field is the strongest, fast moving particles from the sun crash into the atmosphere creating a dazzling light show. Auroras have captivated humanity for a long time. We discuss how the auroras form, what the colors represent, the history and culture associated around them, and the auroras beyond our planet."
+
+- title: "The Star of our Solar System"
+  date: 2025-04-19T13:00:00-05:00
+  speakers: ["Laila Vleeschower", "Tamal RoyChowdhury"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
   slides: ""
   video: ""
-  abstract: "Intro to population inference with PyMC/JAX."
+  abstract: "Our solar system's central star, the Sun, has shaped human history, influencing mythologies, calendars, and agricultural cycles. Beyond its cultural significance, the Sun's energy is fundamental to life on Earth, driving climate, weather, and photosynthesis. As the dominant force in the solar system, it dictates planetary orbits and space weather. In this talk, we will explore its structure and composition, its different types of activity, and its ultimate fate as it evolves and eventually dies."
+
+- title: "Ghost Hunting in the Cosmos"
+  date: 2025-05-03T13:00:00-05:00
+  speakers: ["Amanda Baylor", "Lulu Agazie", "Ronan Humphrey"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  slides: ""
+  video: "https://www.youtube.com/watch?v=ktpiLDf7W9U"
+  abstract: "Sometimes called the Ghost Particle, neutrinos are mysterious messengers from the cosmos. They rarely interact with normal matter which makes them hard to detect, but they're everywhere. In fact, about 100 trillion neutrinos are passing through your body every second! In this talk, we'll discuss what neutrinos are, how we know they exist, and what they can tell us about the universe."
+
+
+# Past
