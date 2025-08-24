@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="Coffee Shop Astrophysics - A community for astrophysics talks and discussions" />
-  {{ $css := resources.Get "css/main.css" | postCSS (dict "inlineImports" true) }}
+  {{/* assets/css/main.css -> processed by PostCSS/Tailwind */}}
+  {{ $css := resources.Get "css/main.css" | css.PostCSS (dict "inlineImports" true) }}
+
   {{ if hugo.IsProduction }}
     {{ $css = $css | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+    <link rel="stylesheet"
+          href="{{ $css.Permalink }}"
+          integrity="{{ $css.Data.Integrity }}"
+          crossorigin="anonymous">
   {{ else }}
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $css.Permalink }}">
   {{ end }}
 </head>
 <body class="h-full bg-zinc-50 dark:bg-black">
