@@ -17,11 +17,11 @@
       <div class="relative px-4 sm:px-8 lg:px-12">
         <div class="mx-auto max-w-2xl lg:max-w-5xl">
           <header class="max-w-2xl">
-            <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            <h1 class="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
               CSA Talks
             </h1>
-            <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-              No talks data found. Add <code class="text-sm bg-zinc-100 px-1 py-0.5 rounded dark:bg-zinc-800">data/talks.yaml</code>.
+            <p class="mt-6 text-base text-zinc-400">
+              No talks data found. Add <code class="text-sm bg-zinc-800 px-1 py-0.5 rounded">data/talks.yaml</code>.
             </p>
           </header>
         </div>
@@ -54,19 +54,19 @@
       <div class="relative px-4 sm:px-8 lg:px-12">
         <div class="mx-auto max-w-2xl lg:max-w-5xl">
           <header class="max-w-2xl">
-            <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            <h1 class="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
               Upcoming Talks
             </h1>
           </header>
           <div class="mt-16 sm:mt-20">
-            <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+            <div class="md:border-l md:border-zinc-700/40 md:pl-6">
               <div class="flex max-w-3xl flex-col space-y-16">
                 {{ range $upcoming }}
                   {{ $t := time .date }}
                   <article class="md:grid md:grid-cols-4 md:items-baseline">
                     <div class="md:col-span-3 group relative flex flex-col items-start">
-                      <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50"></div>
+                      <h2 class="text-base font-semibold tracking-tight text-zinc-100">
+                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-800/50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
                         <span class="relative z-10">
                           {{ with .title }}
                             {{ . }}
@@ -75,36 +75,36 @@
                           {{ end }}
                         </span>
                       </h2>
-                      <time class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500" datetime="{{ $t }}">
+                      <time class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500" datetime="{{ $t }}">
                         {{ $t.Format "January 2, 2006" }}
                       </time>
                       
                       {{ with .speakers }}
-                        <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                        <p class="relative z-10 mt-2 text-sm text-zinc-400">
                           <span class="font-medium">Speakers:</span> {{ delimit . ", " }}
                         </p>
                       {{ end }}
                       
                       {{ with .venue }}
-                        <p class="relative z-10 text-sm text-zinc-600 dark:text-zinc-400">
+                        <p class="relative z-10 text-sm text-zinc-400">
                           <span class="font-medium">Venue:</span> {{ . }}
                         </p>
                       {{ end }}
                       
                       {{ with .abstract }}
-                        <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">{{ . }}</p>
+                        <p class="relative z-10 mt-2 text-sm text-zinc-400">{{ . }}</p>
                       {{ end }}
                       
                       <div class="relative z-10 mt-4 flex flex-wrap gap-3 text-sm">
                         {{ with .slides }}
-                          <a class="text-yellow-500 underline hover:text-yellow-600 dark:text-yellow-400 dark:hover:text-yellow-300" href="{{ . }}" target="_blank" rel="noopener">Slides</a>
+                          <a class="text-yellow-400 underline hover:text-yellow-300" href="{{ . }}" target="_blank" rel="noopener">Slides</a>
                         {{ end }}
                         {{ with .video }}
-                          <a class="text-yellow-500 underline hover:text-yellow-600 dark:text-yellow-400 dark:hover:text-yellow-300" href="{{ . }}" target="_blank" rel="noopener">Video</a>
+                          <a class="text-yellow-400 underline hover:text-yellow-300" href="{{ . }}" target="_blank" rel="noopener">Video</a>
                         {{ end }}
                       </div>
                     </div>
-                    <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500" datetime="{{ $t }}">
+                    <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500" datetime="{{ $t }}">
                       {{ $t.Format "January 2, 2006" }}
                     </time>
                   </article>
@@ -125,12 +125,12 @@
       <div class="relative px-4 sm:px-8 lg:px-12">
         <div class="mx-auto max-w-2xl lg:max-w-5xl">
           <header class="max-w-2xl">
-            <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            <h1 class="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
               Past Talks
             </h1>
           </header>
           <div class="mt-16 sm:mt-20">
-            <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+            <div class="md:border-l md:border-zinc-700/40 md:pl-6">
               <div class="flex max-w-3xl flex-col space-y-16">
                 {{ $.Scratch.Delete "currentYear" }}
                 {{ range $past }}
@@ -141,15 +141,15 @@
                       <!-- Year separator -->
                     {{ end }}
                     <div class="md:grid md:grid-cols-4 md:items-baseline">
-                      <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 md:col-span-4">{{ $year }}</h2>
+                      <h2 class="text-2xl font-bold tracking-tight text-zinc-100 md:col-span-4">{{ $year }}</h2>
                     </div>
                     {{ $.Scratch.Set "currentYear" $year }}
                   {{ end }}
                   
                   <article class="md:grid md:grid-cols-4 md:items-baseline">
                     <div class="md:col-span-3 group relative flex flex-col items-start">
-                      <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50"></div>
+                      <h3 class="text-base font-semibold tracking-tight text-zinc-100">
+                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-800/50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
                         <span class="relative z-10">
                           {{ with .title }}
                             {{ . }}
@@ -158,36 +158,36 @@
                           {{ end }}
                         </span>
                       </h3>
-                      <time class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500" datetime="{{ $t }}">
+                      <time class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500" datetime="{{ $t }}">
                         {{ $t.Format "January 2, 2006" }}
                       </time>
                       
                       {{ with .speakers }}
-                        <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                        <p class="relative z-10 mt-2 text-sm text-zinc-400">
                           <span class="font-medium">Speakers:</span> {{ delimit . ", " }}
                         </p>
                       {{ end }}
                       
                       {{ with .venue }}
-                        <p class="relative z-10 text-sm text-zinc-600 dark:text-zinc-400">
+                        <p class="relative z-10 text-sm text-zinc-400">
                           <span class="font-medium">Venue:</span> {{ . }}
                         </p>
                       {{ end }}
                       
                       {{ with .abstract }}
-                        <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">{{ . }}</p>
+                        <p class="relative z-10 mt-2 text-sm text-zinc-400">{{ . }}</p>
                       {{ end }}
                       
                       <div class="relative z-10 mt-4 flex flex-wrap gap-3 text-sm">
                         {{ with .slides }}
-                          <a class="text-yellow-500 underline hover:text-yellow-600 dark:text-yellow-400 dark:hover:text-yellow-300" href="{{ . }}" target="_blank" rel="noopener">Slides</a>
+                          <a class="text-yellow-400 underline hover:text-yellow-300" href="{{ . }}" target="_blank" rel="noopener">Slides</a>
                         {{ end }}
                         {{ with .video }}
-                          <a class="text-yellow-500 underline hover:text-yellow-600 dark:text-yellow-400 dark:hover:text-yellow-300" href="{{ . }}" target="_blank" rel="noopener">Video</a>
+                          <a class="text-yellow-400 underline hover:text-yellow-300" href="{{ . }}" target="_blank" rel="noopener">Video</a>
                         {{ end }}
                       </div>
                     </div>
-                    <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500" datetime="{{ $t }}">
+                    <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500" datetime="{{ $t }}">
                       {{ $t.Format "January 2, 2006" }}
                     </time>
                   </article>
