@@ -1,4 +1,5 @@
 baseURL = 'https://c0rychu.github.io/csa-neo-hugo/'
+publishDir = "docs"
 languageCode = 'en-us'
 title = 'Coffee Shop Astrophysics'
 theme = 'csa'
