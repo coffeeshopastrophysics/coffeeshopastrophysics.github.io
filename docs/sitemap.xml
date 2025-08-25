@@ -2,7 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://c0rychu.github.io/csa-neo-hugo/meetus/</loc>
+    <loc>https://c0rychu.github.io/csa-neo-hugo/contact/</loc>
+    <lastmod>2025-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://c0rychu.github.io/csa-neo-hugo/members/</loc>
     <lastmod>2025-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://c0rychu.github.io/csa-neo-hugo/tags/blue/</loc>

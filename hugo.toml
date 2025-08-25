@@ -18,8 +18,8 @@ theme = 'csa'
     weight = 20
 
   [[menus.main]]
-    name = 'Meet Us'
-    pageRef = '/meetus'
+    name = 'Members'
+    pageRef = '/members'
     weight = 25
 
   [[menus.main]]
@@ -28,6 +28,6 @@ theme = 'csa'
     weight = 30
 
   [[menus.main]]
-    name = 'Tags'
-    pageRef = '/tags'
+    name = 'Contact'
+    pageRef = '/contact'
     weight = 40

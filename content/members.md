@@ -1,8 +1,8 @@
 ---
-title: "Meet Us"
+title: "Members"
 date: 2025-08-23
 draft: false
-layout: "meetus"
+type: "members"
 ---
 
 Meet the passionate researchers and students who make up the Coffee Shop Astrophysics community. We're a diverse group of graduate students, postdocs, and faculty united by our curiosity about the universe.
