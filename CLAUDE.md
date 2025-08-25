@@ -8,8 +8,8 @@ This is a Hugo static site for "Coffee Shop Astrophysics" - a website showcasing
 
 ## Development Commands
 
-- **Start development server**: `make run-local` or `hugo server -D`
-- **Build site**: `hugo` (outputs to `public/` directory)
+- **Start development server**: `make run-local` or `touch postcss.config.js && hugo server -D`
+- **Build site**: `hugo` (outputs to `docs/` directory)
 - **CSS processing**: Uses PostCSS with Tailwind CSS and autoprefixer
 
 ## Architecture
@@ -38,6 +38,7 @@ The talks system expects `data/talks.yaml` with entries like:
   date: 2025-05-02T15:30:00-05:00
   speakers: ["Name (Affiliation)"]
   venue: "Room Location"
+  venue_link: "https://google-maps-link"
   slides: "https://link-to-slides.pdf"
   video: "https://youtu.be/video-id"
   abstract: "Talk description"
