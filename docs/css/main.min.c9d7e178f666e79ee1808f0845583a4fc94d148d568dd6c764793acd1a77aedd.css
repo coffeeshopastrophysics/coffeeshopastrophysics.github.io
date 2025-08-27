@@ -229,6 +229,9 @@
   .pointer-events-none {
     pointer-events: none;
   }
+  .visible {
+    visibility: visible;
+  }
   .absolute {
     position: absolute;
   }
@@ -912,6 +915,9 @@
   .flex-none {
     flex: none;
   }
+  .grow {
+    flex-grow: 1;
+  }
   .origin-top {
     transform-origin: top;
   }
@@ -1460,6 +1466,10 @@
     @supports (color: color-mix(in lab, red, red)) {
       --tw-ring-color: color-mix(in oklab, var(--color-zinc-900) 5%, transparent);
     }
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .outline-offset-2 {
     outline-offset: 2px;
@@ -2360,6 +2370,9 @@
 }@property --tw-ring-offset-shadow{syntax: "*";
   inherits: false;
   initial-value: 0 0 #0000;
+}@property --tw-outline-style{syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }@property --tw-blur{syntax: "*";
   inherits: false;
 }@property --tw-brightness{syntax: "*";
@@ -2442,6 +2455,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;

@@ -8,8 +8,9 @@
   abstract: "XXX"
 
 
-# 2025 Spring
 
+
+# 2025 Spring
 - title: "Why does the Earth get Angry?"
   date: 2025-02-22T13:00:00-05:00
   speakers: ["Akash Anumarlapudi", "Pratyusava Baral"]
@@ -47,4 +48,126 @@
   abstract: "Sometimes called the Ghost Particle, neutrinos are mysterious messengers from the cosmos. They rarely interact with normal matter which makes them hard to detect, but they're everywhere. In fact, about 100 trillion neutrinos are passing through your body every second! In this talk, we'll discuss what neutrinos are, how we know they exist, and what they can tell us about the universe."
 
 
-# Past
+
+
+# 2024 Fall
+- title: "Galaxies: From Cradle to Grave"
+  date: 2024-09-28T13:00:00-05:00
+  speakers: ["Prasanth Sukumar", "Shashwat Sardesai", "Sarah Villanova Borges"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: "https://www.youtube.com/watch?v=MHQ6qt7C7Jc"
+  abstract: "At 2.5 million light-years from Earth, the Andromeda galaxy is the most distant object that a human can see with the naked eye. While it may seem like just a tiny blob of light against the night sky, Andromeda, along with billions of other galaxies in our universe, contain hundreds of billions of stars as well as more powerful compact objects lurking deep within their cores. Galaxies come in all shapes and sizes and reveal much about the dynamics and structure of our universe. Come to our talk and learn all about galaxies, from their humble beginnings to their strange and mysterious ends, and everything in between!"
+
+## ========== Group ============
+## Grouping by setting the datetime to be exactly the same
+- title: "UW-Madison Astronomy on Tap 2: The Tappening – featuring special guests from UW-Madison"
+  date: 2024-10-26T13:00:00-05:00
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: ""
+  abstract: "We are very excited to welcome back our friends from UW-Madison Astronomy on Tap for the second edition of our AOT/CSA crossover. Instead of one longer talk, there will be two shorter presentations and perhaps some fun trivia in the middle. Hope to see you there!"
+
+- title: "Volcanic Planets - In the Solar System and Beyond"
+  date: 2024-10-26T13:00:00-05:00
+  speakers: ["Juliette Becker"]
+  slides: ""
+  video: ""
+  abstract: "Volcanoes are some of the most spectacular and powerful forces shaping planetary landscapes. They not only sculpt the surface but also influence the atmosphere and potential habitability of a world. In our own solar system, Jupiter's moon Io stands out as the most volcanically active body. Its surface is a constantly changing tapestry, driven by interior tidal stresses that cover its surface in volcanic craters. In this talk, we'll embark on a journey from Io's changing landscape to the surfaces of distant planets orbiting other stars. We'll explore how the same tidal forces that energize Io might also ignite volcanoes on worlds far beyond our solar system. Specifically, we'll delve into the intriguing L 98-59 system, where Earth-sized planets may be experiencing their own volcanic activity due to similar gravitational interactions that occur in the Io-Jupiter system."
+
+- title: "Dancing with the Stars: Spinning, Slinging, and Swinging Across the Universe"
+  date: 2024-10-26T13:00:00-05:00
+  speakers: ["Rachel Lee McClure"]
+  slides: ""
+  video: ""
+  abstract: "Stars live and die on expansive timescales. They jiggle, they wiggle, they expand, they spin, they orbit, and they oscillate on their journey throughout the universe. From scales ranging from the surface of a star, to the dynamics of stellar orbits and interacting galaxies, all the way to the expansion of the universe itself, we will explore the stellar dance that fills the cosmos."
+## ========== END Group ============
+
+- title: "Cosmic Clutter"
+  date: 2024-11-23T13:00:00-05:00
+  speakers: ["Akash Anumarlapudi", "Leith Benali", "Laila Vleeschower"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: "https://www.youtube.com/watch?v=8XjLGzzIL-Y"
+  abstract: "Satellites have become essential to modern life, even if we don’t always realize it. They enable remote communication, give us navigation directions on demand, assist in climate research, and can even be used as tools to uncover the mysteries of the Universe. But once they're in space, how long do they stay operational, and what happens when they stop working? With so many satellites orbiting Earth, what happens when it gets too crowded? These questions have been a core point in the development of international “Space Law.” Join us as we explore the fascinating world of satellites — their purpose, their risks, and how we manage the growing challenge of space debris."
+
+- title: "Fine, we'll talk about aliens"
+  date: 2024-12-07T13:00:00-05:00
+  speakers: ["Amanda Baylor", "Ronan Humphrey", "Gabe Freedman"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: "https://www.youtube.com/watch?v=1llS55Fj1dI"
+  abstract: "In 1950 during a lunchtime conversation at Los Alamos National Laboratory, physicist Enrico Fermi asked “where is everybody?“. Fermi then went on to estimate that given the number of stars in the Milky Way Galaxy and probability of Earth-like planets, we should have been contacted by extraterrestrials by then. If the universe is so vast, why do we seem to be alone in it? What about the “Wow!” signal or that face on Mars? Maybe we have had contact and just don’t know it! Join us to discuss extraterrestrial signals, unexplained phenomena, and the relationship between science and the public when it comes to the search for extraterrestrial life."
+
+
+
+
+# 2024 Spring
+- title: "Who Hid the Sun?"
+  date: 2024-02-24T13:00:00-05:00
+  speakers: ["Pratyusava Baral", "Leith Benali"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: "https://www.youtube.com/watch?v=CnxjuL9W17s"
+  abstract: "On Monday, April 8, 2024, the Moon will pass between the Earth and the Sun creating a total solar eclipse whose path will cross over North America. In this talk, we will prepare you for this extraordinary astronomical event! Come learn about what happens during an eclipse, the differences between solar and lunar eclipses, how they have influenced various cultures, what role they have played in the history, and how we can safely view it."
+
+## ========== Group ============
+## Grouping by setting the datetime to be exactly the same
+- title: "Special Guest Presentation featuring UW-Madison Astronomy on Tap"
+  date: 2024-03-02T13:00:00-05:00
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: ""
+  abstract: "We are very excited to welcome two presenters from the UW-Madison Astronomy on Tap public outreach group. This event will be a little different than what you're used to, with two shorter talks and plenty of time for questions, trivia, and more fun. Should be a great time!"
+
+- title: "The New Baby Boomers: Behemoth Black Holes Formed at the Dawn of Time?"
+  date: 2024-03-02T13:00:00-05:00
+  speakers: ["Christy Tremonti"]
+  slides: ""
+  video: ""
+  abstract: "The James Webb Space Telescope is transforming our knowledge of the earliest stages of galaxy formation. One of the biggest surprises has been the finding that small, young galaxies often contain whoppingly large black holes at their centers. We’ll talk about what a black hole is, how they form, and how we know they exist. Then we’ll discuss why it’s so surprising to see really big black holes early in the Universe’s history and what it might mean."
+
+- title: "Observing the Invisible Universe"
+  date: 2024-03-02T13:00:00-05:00
+  speakers: ["Nickolas Pingel"]
+  slides: ""
+  video: ""
+  abstract: "Astronomers use radio telescopes to detect a portion of the electromagnetic spectrum that is not visible to the human eye. This talk will outline how radio telescopes work, explore the different cosmic phenomena that can be observed with radio telescopes, such as supernova remnants, the gaseous components of galaxies, and pulsars, and how radio astronomy contributes to our understanding of these objects."
+## ========== END Group ============
+
+- title: "Coffeeshop Astrophysics Celebrates its 10-Year Anniversary! - featuring special guests"
+  date: 2024-04-27T13:00:00-05:00
+  speakers: ["Sydney Chamberlain", "Laleh Sadeghian", "Casey McGrath"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: "https://www.youtube.com/watch?v=NtRjQ-WAVO0"
+  abstract: "In 2014 Coffeeshop Astrophysics was founded as a small public outreach group aimed at bringing accessbile scientific talks to the Milwaukee community and fostering a love for astrophysics in people of all ages and backgrounds. Now 10 years later, we have given over 75 public talks at the Anodyne coffeeshop in Walker's Point and seen dozens of UWM graduate students and postdocs participate. Most importantly we have seen our audience grow to include a mix of long-time attendees as well as many newcomers just discovering our talk series. We are excited to welcome back three past members of Coffeeshop Astrophysics who were integral to its growth and development. They will share with you all the cool work, scientific or otherwise, that they have been up to since leaving UWM. We want to sincerely thank each and every one of you for your support over the past 10 years, and we look forward to 10 more years of sharing science with you and the greater Milwaukee community."
+
+- title: "A Journey through the Astrophysics Discoveries of the Past 10 Years"
+  date: 2024-05-11T13:00:00-05:00
+  speakers: ["Sarah Borges", "Laila Vleeschower"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: "https://www.youtube.com/watch?v=phEO6f4VGCI"
+  abstract: "The landscape of astrophysics research and our understanding of the universe has changed dramatically over the past 10 years since the founding of Coffeeshop Astrophysics. Gravitational waves were first discovered in a groundbreaking detection by the Laser Interferometer Gravitational wave Observatory (LIGO). The discovery of thousands of exoplanets, some potentially habitable, helped expand the horizons of planetary science. There were also enormous advancements in space technology and instrumentation such as the James Webb Space Telescope, which in only a couple of years has completely transformed our understanding of the universe both near and far. In this talk we will review the exciting discoveries and scientific improvements of the last decade and talk about what we hope to accomplish in the next ten years!"
+
+
+
+
+# 2023 Fall
+# - title: ""
+#   date: 2024-09-28T13:00:00-05:00
+#   speakers: ["", "", ""]
+#   venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+#   venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+#   slides: ""
+#   video: ""
+#   abstract: ""
