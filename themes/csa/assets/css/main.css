@@ -7,6 +7,20 @@
   --color-teal-500: oklch(70.4% 0.14 182.503);
 }
 
+/* Force prose link colors to ensure they appear in production */
+.prose a {
+  color: var(--color-teal-500) !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  transition-property: color !important;
+}
+
+.prose a:hover {
+  color: var(--color-teal-300) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px !important;
+}
+
 /* Custom styles to extend Tailwind */
 html {
   scroll-behavior: smooth;
