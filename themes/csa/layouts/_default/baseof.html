@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="Coffee Shop Astrophysics - A community for astrophysics talks and discussions" />
+  <meta property="og:title" content="Coffee Shop Astrophysics" />
+  <meta property="og:description"
+      content="A series of informal public lectures aimed at anyone interested in getting a taste of modern science, all from the comfort of your local coffee shop." />
+  <meta property="og:image" content="https://coffeeshopastrophysics.github.io/images/poster.jpg" />
   {{/* assets/css/main.css -> processed by PostCSS/Tailwind */}}
   {{ $css := resources.Get "css/main.css" | css.PostCSS (dict "inlineImports" true) }}
 
