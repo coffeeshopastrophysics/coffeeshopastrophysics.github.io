@@ -5,7 +5,7 @@ draft = false
 tags = ['photos']
 +++
 
-Here is some collection of old photos migrated from our old website.
+We’ve brought back a little piece of CoffeeShop Astrophysics history. This gallery gathers photos from our old website—snapshots of talks, experiments, and curious minds stretching back nearly a decade. You’ll find moments from recent events, like the Spring and Fall 2022 seasons, alongside older highlights: exploring the colors of the universe with diffraction glasses in 2016, celebrating 100 years of Einstein’s relativity in 2015, and even diving into Pluto’s flyby that same summer. Some photos go back further still, capturing the excitement of learning about black holes, the Big Bang, and the lives of stars. These pictures aren’t just records of past events—they’re reminders of the community, curiosity, and fun that CoffeeShop Astrophysics has always been about.
 
 ## Spring 2018
 ![](sping18-20180311-DSC_0434.jpg)
