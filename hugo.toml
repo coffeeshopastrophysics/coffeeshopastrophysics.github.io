@@ -1,4 +1,4 @@
-baseURL = 'https://c0rychu.github.io/csa-neo-hugo/'
+baseURL = 'https://coffeeshopastrophysics.github.io/'
 relativeURLs = true
 canonifyURLs = true
 languageCode = 'en-us'
