@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* Ensure teal colors are always available for prose links */
+:root {
+  --color-teal-300: oklch(85.5% 0.138 181.071);
+  --color-teal-500: oklch(70.4% 0.14 182.503);
+}
+
 /* Custom styles to extend Tailwind */
 html {
   scroll-behavior: smooth;
