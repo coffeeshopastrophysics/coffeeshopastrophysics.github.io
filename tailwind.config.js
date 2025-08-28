@@ -14,7 +14,42 @@ module.exports = {
     'prose-a:underline-offset-2',
   ],
   darkMode: 'class',
-  theme: { extend: {} },
+  theme: {
+    extend: {
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            'a': {
+              color: theme('colors.teal.500'),
+              textDecoration: 'none',
+              fontWeight: '500',
+              transitionProperty: 'color',
+            },
+            'a:hover': {
+              color: theme('colors.teal.300'),
+              textDecoration: 'underline',
+              textUnderlineOffset: '2px',
+            },
+          },
+        },
+        invert: {
+          css: {
+            'a': {
+              color: theme('colors.teal.500'),
+              textDecoration: 'none',
+              fontWeight: '500',
+              transitionProperty: 'color',
+            },
+            'a:hover': {
+              color: theme('colors.teal.300'),
+              textDecoration: 'underline',
+              textUnderlineOffset: '2px',
+            },
+          },
+        },
+      }),
+    },
+  },
   plugins: [
     require('@tailwindcss/typography'),
   ],
