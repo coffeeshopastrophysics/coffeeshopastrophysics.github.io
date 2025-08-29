@@ -1,3 +1,3 @@
 run-local:
-	touch postcss.config.js && hugo server --disableFastRender -D
+	touch postcss.config.js && hugo server --gc --minify --disableFastRender -D
 

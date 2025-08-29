@@ -12,6 +12,10 @@ module.exports = {
     'prose-a:hover:text-teal-300',
     'prose-a:hover:underline',
     'prose-a:underline-offset-2',
+    // Ensure image styling is preserved
+    'prose-img:rounded-2xl',
+    'prose-img:shadow-xl',
+    'rounded-2xl',
   ],
   darkMode: 'class',
   theme: {
@@ -30,6 +34,10 @@ module.exports = {
               textDecoration: 'underline',
               textUnderlineOffset: '2px',
             },
+            'img': {
+              borderRadius: theme('borderRadius.2xl'),
+              boxShadow: theme('boxShadow.xl'),
+            },
           },
         },
         invert: {
@@ -44,6 +52,10 @@ module.exports = {
               color: theme('colors.teal.300'),
               textDecoration: 'underline',
               textUnderlineOffset: '2px',
+            },
+            'img': {
+              borderRadius: theme('borderRadius.2xl'),
+              boxShadow: theme('boxShadow.xl'),
             },
           },
         },

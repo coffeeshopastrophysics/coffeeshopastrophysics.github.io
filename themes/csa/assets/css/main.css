@@ -21,6 +21,12 @@
   text-underline-offset: 2px !important;
 }
 
+/* Force prose image styling to ensure they appear in production */
+.prose img {
+  border-radius: 1rem !important; /* equivalent to rounded-2xl */
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25) !important; /* equivalent to shadow-xl */
+}
+
 /* Custom styles to extend Tailwind */
 html {
   scroll-behavior: smooth;
