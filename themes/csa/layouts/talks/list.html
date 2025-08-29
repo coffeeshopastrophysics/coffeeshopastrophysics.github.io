@@ -62,15 +62,23 @@
             <div class="md:border-l md:border-zinc-700/40 md:pl-6">
               <div class="flex max-w-3xl flex-col space-y-16">
                 {{ $.Scratch.Delete "prevDateTime" }}
-                {{ range $upcoming }}
+                {{ $.Scratch.Set "talkIndex" 0 }}
+                {{ range (sort $upcoming "date" "asc") }}
                   {{ $talk := . }}
                   {{ $t := time .date }}
                   {{ $currentDateTime := $t.Format "2006-01-02T15:04:05Z07:00" }}
                   {{ $showDate := ne $currentDateTime ($.Scratch.Get "prevDateTime") }}
-                  <article class="md:grid md:grid-cols-4 md:items-baseline">
-                    <div class="md:col-span-3 group relative flex flex-col items-start">
-                      <h2 class="text-2xl font-semibold tracking-tight text-zinc-100">
-                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-800/50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
+                  {{ $isFirst := eq ($.Scratch.Get "talkIndex") 0 }}
+                  <article class="md:grid md:grid-cols-4 md:items-baseline {{ if $isFirst }}relative{{ end }}">
+                    {{ if $isFirst }}
+                      <div class="absolute -inset-x-4 -inset-y-6 ring-2 ring-yellow-500/20 bg-gradient-to-r from-yellow-900/10 to-cyan-900/10 rounded-2xl z-0 sm:-inset-x-6"></div>
+                      <div class="absolute -top-8 -right-2 z-20">
+                        <span class="inline-flex items-center rounded-full bg-yellow-500 px-2 py-1 text-xs font-medium text-black">Next Talk</span>
+                      </div>
+                    {{ end }}
+                    <div class="md:col-span-3 group relative flex flex-col items-start {{ if $isFirst }}z-10{{ end }}">
+                      <h2 class="text-2xl font-semibold tracking-tight {{ if $isFirst }}text-yellow-100{{ else }}text-zinc-100{{ end }}">
+                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 {{ if $isFirst }}bg-yellow-800/30{{ else }}bg-zinc-800/50{{ end }} opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>
                         <span class="relative z-10">
                           {{ with .title }}
                             {{ . }}
@@ -122,6 +130,7 @@
                     </time>
                   </article>
                   {{ $.Scratch.Set "prevDateTime" $currentDateTime }}
+                  {{ $.Scratch.Add "talkIndex" 1 }}
                 {{ end }}
               </div>
             </div>

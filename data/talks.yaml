@@ -1,11 +1,39 @@
-# - title: "NEW Talk XXX"
-#   date: 2025-10-14T13:00:00-05:00
-#   speakers: ["XXX"]
-#   venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
-#   venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
-#   slides: ""
-#   video: ""
-#   abstract: "XXX"
+# 2025 Fall
+- title: "The View from Above"
+  date: 2025-09-27T13:00:00-05:00
+  speakers: ["Leith Benali", "Lulu Agazie"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: ""
+  abstract: "Since the launch of Sputnik 1 in 1957, roughly 14,500 satellites have been launched into orbit around Earth. Currently there are about 11,700 active satellites, roughly 1,100 of which are used for Earth science. These are very powerful tools for studying large scale phenomena on Earth that are hard to observe from Earth's surface. In this talk we'll talk about how scientists use satellite observations for doing research on everything from weather patterns and tectonic plate movement to air pollution and environmental disasters."
+
+- title: "Nebulae: From Cradle to Grave, and Cradle Again"
+  date: 2025-10-25T13:00:00-05:00
+  speakers: ["Calvin Dear", "Jason Vazquez", "Caleb Ogle"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: ""
+  abstract: "Have you ever looked at a stunning picture from NASA full of swirling colors, almost like it should be hanging in an art museum? Chances are, you're looking at a nebula. Nebulae are enormous clouds of dust and gas out in space. Some nebulae are the aftermath of a supernova, the explosive death of a massive star. Others serve as the birthplace of many new stars, formed by the gravitational pull of gas and radiative push of their first stars. Some nebulae even act as both. Join us as we explore nebulae and their role in star formation, and of course, look at many breathtaking pictures."
+
+- title: "Space Rocks and Stardust"
+  date: 2025-11-15T13:00:00-05:00
+  speakers: ["Pratyasha Gitika", "Tamal RoyChowdhury", "Laila Vleeschower"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: ""
+  abstract: "Are shooting stars really stars falling from the sky? Spoiler alert: they're not! Those quick flashes of light are actually tiny bits of space dust and rock burning up in our atmosphere. In this talk, we'll take a journey through the leftovers of the formation of our Solar System: asteroids, meteorites, and comets. We'll talk about how these cosmic “crumbs” sometimes light up our skies as meteor showers, how a rock you could hold in your hand might be older than the Earth itself, and how one very big space rock may have changed the path of life's evolution on Earth by wiping out the dinosaurs."
+
+- title: "What You Probably Don't Know About AI"
+  date: 2025-12-06T13:00:00-05:00
+  speakers: ["Ronan Humphrey", "Adam Opperman", "Pratyusava Baral"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: ""
+  abstract: "Over the last century, computing in science has changed from human computers doing calculations by hand to supercomputers that can perform over 10^18 (that's 1,000,000,000,000,000,000!) operations per second. This exponential growth in computing power has enabled the development of sophisticated machine learning algorithms (often referred to as artificial intelligence) capable of analyzing data, recognizing patterns, and making predictions in ways that were unimaginable just a few decades ago. But what even is AI, and how do scientists utilize these evolving technologies? From computing history, to modern environmental and ethical concerns, join us to learn “What You Probably Don't Know About AI”!"
 
 
 
