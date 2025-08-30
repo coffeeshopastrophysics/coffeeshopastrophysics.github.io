@@ -118,10 +118,19 @@
                       
                       <div class="relative z-10 mt-4 flex flex-wrap gap-3 text-sm">
                         {{ with .slides }}
-                          <a class="text-yellow-400 underline hover:text-yellow-300" href="{{ . }}" target="_blank" rel="noopener">Slides</a>
+                          <a class="text-yellow-400 underline hover:text-yellow-300 inline-flex items-center gap-2 group/slides" href="{{ . }}" target="_blank" rel="noopener">
+                            <svg class="h-7 w-7 transition-transform group-hover/slides:scale-110" viewBox="0 0 24 24" fill="#3b82f6">
+                              <path d="M6 2c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
+                              <path fill="#1d4ed8" d="M8 12h8v1H8v-1zm0 2h8v1H8v-1zm0 2h5v1H8v-1z"/>
+                            </svg>
+                            Slides
+                          </a>
                         {{ end }}
                         {{ with .video }}
-                          <a class="text-yellow-400 underline hover:text-yellow-300" href="{{ . }}" target="_blank" rel="noopener">Video</a>
+                          <a class="text-yellow-400 underline hover:text-yellow-300 inline-flex items-center gap-2 group/video" href="{{ . }}" target="_blank" rel="noopener">
+                            <img src="/images/icon-youtube.png" alt="YouTube" class="h-7 w-7 transition-transform group-hover/video:scale-110">
+                            Video
+                          </a>
                         {{ end }}
                       </div>
                     </div>
@@ -231,10 +240,19 @@
                       
                       <div class="relative z-10 mt-4 flex flex-wrap gap-3 text-sm">
                         {{ with .slides }}
-                          <a class="text-yellow-400 underline hover:text-yellow-300" href="{{ . }}" target="_blank" rel="noopener">Slides</a>
+                          <a class="text-yellow-400 underline hover:text-yellow-300 inline-flex items-center gap-2 group/slides" href="{{ . }}" target="_blank" rel="noopener">
+                            <svg class="h-7 w-7 transition-transform group-hover/slides:scale-110" viewBox="0 0 24 24" fill="#3b82f6">
+                              <path d="M6 2c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
+                              <path fill="#1d4ed8" d="M8 12h8v1H8v-1zm0 2h8v1H8v-1zm0 2h5v1H8v-1z"/>
+                            </svg>
+                            Slides
+                          </a>
                         {{ end }}
                         {{ with .video }}
-                          <a class="text-yellow-400 underline hover:text-yellow-300" href="{{ . }}" target="_blank" rel="noopener">Video</a>
+                          <a class="text-yellow-400 underline hover:text-yellow-300 inline-flex items-center gap-2 group/video" href="{{ . }}" target="_blank" rel="noopener">
+                            <img src="/images/icon-youtube.png" alt="YouTube" class="h-7 w-7 transition-transform group-hover/video:scale-110">
+                            Video
+                          </a>
                         {{ end }}
                       </div>
                     </div>
