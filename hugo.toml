@@ -5,6 +5,11 @@ languageCode = 'en-us'
 title = 'Coffee Shop Astrophysics'
 theme = 'csa'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'

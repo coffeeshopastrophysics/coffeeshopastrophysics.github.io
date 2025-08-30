@@ -113,7 +113,7 @@
                       </p>
                       
                       {{ with .abstract }}
-                        <p class="relative z-10 mt-2 text-sm text-zinc-400">{{ . }}</p>
+                        <div class="relative z-10 mt-2 text-sm text-zinc-400 prose-a:text-yellow-400 prose-a:hover:text-yellow-300 prose-a:underline-offset-2 prose-a:hover:underline prose-a:no-underline prose-a:font-medium">{{ . | markdownify }}</div>
                       {{ end }}
                       
                       <div class="relative z-10 mt-4 flex flex-wrap gap-3 text-sm">
@@ -226,7 +226,7 @@
                       </p>
                       
                       {{ with .abstract }}
-                        <p class="relative z-10 mt-2 text-sm text-zinc-400">{{ . }}</p>
+                        <div class="relative z-10 mt-2 text-sm text-zinc-400 prose-a:text-yellow-400 prose-a:hover:text-yellow-300 prose-a:underline-offset-2 prose-a:hover:underline prose-a:no-underline prose-a:font-medium">{{ . | markdownify }}</div>
                       {{ end }}
                       
                       <div class="relative z-10 mt-4 flex flex-wrap gap-3 text-sm">
