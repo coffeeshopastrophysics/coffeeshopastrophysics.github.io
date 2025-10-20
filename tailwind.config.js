@@ -12,6 +12,10 @@ module.exports = {
     'prose-a:hover:text-teal-300',
     'prose-a:hover:underline',
     'prose-a:underline-offset-2',
+    // Ensure yellow link styles for member bios (arbitrary variants with !important)
+    {
+      pattern: /\[&_a(|:hover)\]:!(text-yellow-(400|300)|no-underline|underline|underline-offset-2|font-medium)/,
+    },
     // Ensure image styling is preserved
     'prose-img:rounded-2xl',
     'prose-img:shadow-xl',
