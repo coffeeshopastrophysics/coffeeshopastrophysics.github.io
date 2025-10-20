@@ -31,7 +31,7 @@
                   <h3 class="text-lg font-semibold text-zinc-100">{{ .name }}</h3>
                   <p class="mt-1 text-sm text-yellow-400">{{ .title }}</p>
                   {{ with .bio }}
-                    <div class="mt-4 text-base text-zinc-400 text-left prose-a:text-yellow-400 prose-a:hover:text-yellow-300 prose-a:underline-offset-2 prose-a:hover:underline prose-a:no-underline prose-a:font-medium">{{ . | markdownify }}</div>
+                    <div class="mt-4 text-base text-zinc-400 text-left prose prose-invert [&_a]:!text-yellow-400 [&_a:hover]:!text-yellow-300 [&_a]:!underline-offset-2 [&_a:hover]:!underline [&_a]:!no-underline [&_a]:!font-medium">{{ . | markdownify }}</div>
                   {{ end }}
                 </div>
               </div>
