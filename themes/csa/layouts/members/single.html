@@ -24,6 +24,7 @@
             
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
               {{ range $members }}
+              {{ if not .former_member }}
               <div class="bg-zinc-900 rounded-2xl shadow-sm ring-1 ring-zinc-800 p-8">
                 <div class="text-center">
                   <img class="size-36 rounded-full bg-zinc-600 object-cover mx-auto mb-4" src="/images/profile_img/{{ .image }}" alt="{{ .name }}">
@@ -34,6 +35,7 @@
                   {{ end }}
                 </div>
               </div>
+              {{ end }}
               {{ end }}
             </div>
             
@@ -76,30 +78,17 @@
               <h2 class="text-3xl font-bold tracking-tight text-zinc-100">Hall of Fame</h2>
               <p class="text-sm text-yellow-400 mt-2 mb-6">(Previous CoffeeShop Astrophysics group members)</p>
               <div class="space-y-2 text-zinc-400">
-                <p>Sydney Chamberlin (Founder of CoffeeShop Astrophysics)</p>
-                <p>Laura Nuttall</p>
-                <p>Megan DeCesar</p>
-                <p>Laleh Sadeghian</p>
-                <p>Alex Urban</p>
-                <p>Sarah Caudill</p>
-                <p>Danielle Berg</p>
-                <p>Debnandini Mukherjee</p>
-                <p>Hong Qi</p>
-                <p>Shasvath Kapadia</p>
-                <p>Sarah Vigeland</p>
-                <p>Kristina Islo</p>
-                <p>Shaon Ghosh</p>
-                <p>Angela Van Sistine</p>
-                <p>Joseph Swiggum</p>
-                <p>Casey McGrath</p>
-                <p>Brandon Piotrzkowski</p>
-                <p>Siddharth Mohite</p>
-                <p>Annalisa Citro</p>
-                <p>Mark Poe</p>
-                <p>Naresh Adhikari</p>
-                <p>Ian Brown</p>
-                <p>Allie Spaulding</p>
-                <p>Alex McEwen</p>
+                {{ $formerMembers := slice }}
+                {{ range $members }}
+                  {{ if .former_member }}
+                    {{ $formerMembers = $formerMembers | append . }}
+                  {{ end }}
+                {{ end }}
+                {{ $count := len $formerMembers }}
+                {{ range $i, $_ := $formerMembers }}
+                  {{ $member := index $formerMembers (sub (sub $count 1) $i) }}
+                  <p>{{ $member.name }}{{ if eq $member.title "Founder of CoffeeShop Astrophysics" }} (Founder of CoffeeShop Astrophysics){{ end }}</p>
+                {{ end }}
               </div>
               <p class="mt-6 text-sm font-medium text-yellow-400">
                 Coffee Shop Astrophysics - Where curiosity meets discovery over a great cup of coffee.
