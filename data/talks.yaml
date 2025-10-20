@@ -5,7 +5,7 @@
   venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
   venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
   slides: ""
-  video: ""
+  video: "https://www.youtube.com/watch?v=2nLFLPGYu_I"
   abstract: "Since the launch of Sputnik 1 in 1957, roughly 14,500 satellites have been launched into orbit around Earth. Currently there are about 11,700 active satellites, roughly 1,100 of which are used for Earth science. These are very powerful tools for studying large scale phenomena on Earth that are hard to observe from Earth's surface. In this talk we'll talk about how scientists use satellite observations for doing research on everything from weather patterns and tectonic plate movement to air pollution and environmental disasters."
 
 - title: "Nebulae: From Cradle to Grave, and Cradle Again"
