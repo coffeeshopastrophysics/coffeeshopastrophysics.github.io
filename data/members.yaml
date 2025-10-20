@@ -1,64 +1,179 @@
 - name: "Lulu Agazie"
   title: "Graduate Student"
   image: "lulu_agazie.jpeg"
+  former_member: false
   bio: "I started graduate school at UWM in 2020, and my research is focused on studying pulsars. I first got involved in pulsar research as an undergraduate at West Virginia University, where I had the opportunity to learn how to take and analyze data on the Robert C. Byrd Green Bank Telescope. My hobbies include biking, playing the harp, and hiking."
 
 - name: "Pratyusava Baral"
   title: "Graduate Student"
   image: "Pratyusava_Baral.jpg"
+  former_member: false
   bio: "I was always interested in knowing why and how things work since my childhood. In high school, I was more attracted to physics over other sciences because it dealt with the simplest systems and yet it can be very powerful. Just after I joined an undergraduate program in physics in India, the news of the first gravitational wave being detected broke out. The fact that we can detect something so tiny fascinated me and started digging into it. This brought me to the graduate program in University of Wisconsin, Milwaukee and have been currently on gravitational wave cosmology. In my spare time I like to experiment with cooking, go on walks, watch cricket, or think about random things!"
 
 - name: "Amanda Baylor"
   title: "Graduate Student"
   image: "abaylor.jpg"
+  former_member: false
   bio: "I fell in love with physics my senior year of high school and had a strong desire to investigate distant phenomena in our universe. I then began my studies in optical astronomy at Dickinson College, researching binary star systems and astrophysical spectra. In 2019 I traveled to Australia to perform research in gravitational wave astrophysics, which I continue to do after joining the PhD program at UWM in 2020. When I'm not searching for black holes and neutron stars, I enjoy running by the lake, reading, and caring for my house plants."
 
 - name: "Leith Benali"
   title: "Graduate Student"
   image: "Leith_Benali.jpg"
+  former_member: false
   bio: "I joined the PhD program at UWM in 2023 to study gravitational waves. I joined Coffeeshop Astrophysics because I want to help get the public excited about science and practice my public speaking skills. Outside of physics, I love cooking/baking, playing trombone, and practicing Taekwondo."
 
 - name: "Sarah Villanova Borges"
   title: "Graduate Student"
   image: "sarahborges.jpeg"
+  former_member: false
   bio: "When I was a kid, I read an article in the newspaper explaining the discovery of the first exoplanets that changed my life. Since that day, my interest in investigating the mysteries of the universe has been a companion. During my teenage years, I read all the books and information about astronomy I could find. And was this love for the skies that led me to a bachelor's in Aerospace engineering, and to later pursue a Ph.D. in physics at UWM. I joined Coffeeshop Astro because I wanted to motivate others to love and (maybe) work with science in the same way I was inspired by that first article. Outside of my work, I enjoy reading romances, writing and traveling."
 
 - name: "Cory Chu"
   title: "Graduate Student"
   image: "cory_chu.jpg"
+  former_member: false
   bio: "I'm Cory from Taiwan. My research interests include Gravitational Wave Physics and Cosmology. Besides, I'm a Blogger 📝 and a Filmmaker 🎥. You are welcome to check out my [YouTube Channel](https://www.youtube.com/@GravitonFilm) and my [Blog](https://corychu.medium.com/) 😬."
-
-- name: "Gabe Freedman"
-  title: "Graduate Student"
-  image: "gfreedman.jpg"
-  bio: "I look at space as the final frontier, the last great unknown for us to venture into and explore. I believe that studying the world beyond our planet and beyond our solar system can help us better understand and appreciate our place here on Earth. I joined the PhD program at UWM in 2019, and my research focuses on searching for low frequency gravitational waves using pulsar timing arrays. Specifically I look into modern computational methods for performing these searches and making the analyses tractable. Outside of my studies, I'm a lifelong pianist and avid tennis player. And a big Yankees fan."
 
 - name: "Ronan Humphrey"
   title: "Graduate Student"
   image: "RHumphrey.jpeg"
+  former_member: false
   bio: "I've always loved science and science fiction; I did my undergrad at DePaul University in Chicago where I chose to major in physics in order to get a little closer to my childhood dream of working on the Starship Enterprise. I am now a PhD student at UWM. I study computational astrophysics, performing simulations of events such as tidal disruptions and supernovae. Outside of physics, I like baking bread, sewing, and playing video games."
 
 - name: "Caleb Ogle"
   title: "Graduate Student"
   image: "caleb_ogle.jpeg"
+  former_member: false
   bio: "I came to UWM in the Fall of 2024 to research gravitational waves because they offer a new and unique lense with which to observe the universe. Currently, I'm part of our LIGO group and my research involves applications of machine learning on gravitational wave data. Outside of research I enjoy playing the guitar, going to the gym with friends, and everything about my crazy dog Nova."
 
 - name: "Tamal RoyChoudhury"
   title: "Graduate Student"
   image: "troychowdhury.jpg"
+  former_member: false
   bio: "I have always found the starry night sky to be intriguing. But my genuine interest in Astronomy sparked as an 11-year-old when I was gifted an encyclopedia on space. Going through it, I realized there is more to the night sky than just the dots of light that we see. Growing up I started to take an interest in Physics to know how things work. Hence, I pursued a bachelor's and a master's in Physics and decided to continue into research. I joined the graduate program at UWM in 2022 and my research interest is gravitational wave astronomy. Back when I was in school, I used to enjoy explaining to my friends' the new things I read from different books on space. That stopped happening as I grew up. But maybe some part of me wants to do it again, hence I decided to join the Coffeeshop Astrophysics group. I like reading books and watching soccer in my spare time, and I'm also an avid gamer."
-
-- name: "Shashwat Sardesai"
-  title: "Graduate Student"
-  image: "ssardesai.png"
-  bio: "I am a 5th year graduate student studying gravitational waves. When I'm not researching, I enjoys sci-fi movies, video games and writing."
 
 - name: "Laila Vreeschower"
   title: "Postdoctoral Researcher"
   image: "Laila_Vleeschower.jpg"
+  former_member: false
   bio: "As a child, I dreamed to venture into space as an astronaut. However, I later became fascinated with studying the night sky, leading me to pursue a career as an astrophysicist. In 2023, I completed my Ph.D. in Astronomy and Astrophysics at the University of Manchester, and subsequently joined UWM as a postdoctoral researcher. My research focuses on searching and timing of pulsars under the NANOGrav project. Beyond physics, I enjoy cooking, practicing yoga, dancing, reading, and traveling."
 
 - name: "Simon Yeung"
   title: "Graduate Student"
   image: "syeung.jpg"
+  former_member: false
   bio: "Amazed by how physics describe the world accurately, I devote myself into the career of physics. In particular, Einstein's general relativity is one of the most elegant theories in physics. Expansion of the universe, black holes... are all amazing phenomena predicted by the theory. Here I am, studying physics, and contributing to the world. Aside from physics, I like making and drinking coffee, playing video games and reading philosophy books. Cooking is now my new hobby."
+
+
+
+# ==================
+# Former Members
+# ==================
+
+- name: "Gabe Freedman"
+  title: "Graduate Student"
+  image: "gfreedman.jpg"
+  former_member: true
+  bio: "I look at space as the final frontier, the last great unknown for us to venture into and explore. I believe that studying the world beyond our planet and beyond our solar system can help us better understand and appreciate our place here on Earth. I joined the PhD program at UWM in 2019, and my research focuses on searching for low frequency gravitational waves using pulsar timing arrays. Specifically I look into modern computational methods for performing these searches and making the analyses tractable. Outside of my studies, I'm a lifelong pianist and avid tennis player. And a big Yankees fan."
+
+- name: "Shashwat Sardesai"
+  title: "Graduate Student"
+  image: "ssardesai.png"
+  former_member: true
+  bio: "I am a 5th year graduate student studying gravitational waves. When I'm not researching, I enjoys sci-fi movies, video games and writing."
+
+- name: "Alex McEwen"
+  title: "Former Member"
+  former_member: true
+
+- name: "Allie Spaulding"
+  title: "Former Member"
+  former_member: true
+
+- name: "Ian Brown"
+  title: "Former Member"
+  former_member: true
+
+- name: "Naresh Adhikari"
+  title: "Former Member"
+  former_member: true
+
+- name: "Mark Poe"
+  title: "Former Member"
+  former_member: true
+
+- name: "Annalisa Citro"
+  title: "Former Member"
+  former_member: true
+
+- name: "Siddharth Mohite"
+  title: "Former Member"
+  former_member: true
+
+- name: "Brandon Piotrzkowski"
+  title: "Former Member"
+  former_member: true
+
+- name: "Casey McGrath"
+  title: "Former Member"
+  former_member: true
+
+- name: "Joseph Swiggum"
+  title: "Former Member"
+  former_member: true
+
+- name: "Angela Van Sistine"
+  title: "Former Member"
+  former_member: true
+
+- name: "Shaon Ghosh"
+  title: "Former Member"
+  former_member: true
+
+- name: "Kristina Islo"
+  title: "Former Member"
+  former_member: true
+
+- name: "Sarah Vigeland"
+  title: "Former Member"
+  former_member: true
+
+- name: "Shasvath Kapadia"
+  title: "Former Member"
+  former_member: true
+
+- name: "Hong Qi"
+  title: "Former Member"
+  former_member: true
+
+- name: "Debnandini Mukherjee"
+  title: "Former Member"
+  former_member: true
+
+- name: "Danielle Berg"
+  title: "Former Member"
+  former_member: true
+
+- name: "Sarah Caudill"
+  title: "Former Member"
+  former_member: true
+
+- name: "Alex Urban"
+  title: "Former Member"
+  former_member: true
+
+- name: "Laleh Sadeghian"
+  title: "Former Member"
+  former_member: true
+
+- name: "Megan DeCesar"
+  title: "Former Member"
+  former_member: true
+
+- name: "Laura Nuttall"
+  title: "Former Member"
+  former_member: true
+
+- name: "Sydney Chamberlin"
+  title: "Founder of CoffeeShop Astrophysics"
+  former_member: true
