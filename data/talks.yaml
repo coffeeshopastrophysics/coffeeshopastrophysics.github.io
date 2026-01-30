@@ -1,3 +1,54 @@
+# Template
+# - title: ""
+#   date: 2025-09-27T13:00:00-05:00
+#   speakers: ["", ""]
+#   venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+#   venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+#   slides: ""
+#   video: ""
+#   abstract: ""
+
+
+# 2026 Spring
+- title: "Love Written in the Stars"
+  date: 2026-02-14T13:00:00-05:00
+  speakers: ["Lulu Agazie", "Amanda Baylor", "Ronan Humphrey"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: ""
+  abstract: "While our solar system only has a single star, some astronomers estimate over 80% of the stars in our galaxy exist in binaries. These binary stars orbit around a shared center of gravity in a perfectly timed dance that lasts for millions of years. Binary stars are also responsible for a number of spectacular events like cataclysmic variables, supernovae, and kilonovae. Join us to see how these cosmic couples get together, age, and form the building blocks for new stars."
+
+- title: "Building a Measuring Tape for the Universe"
+  date: 2026-03-07T13:00:00-05:00
+  speakers: ["Sarah Villanova Borges", "Leith Benali", "Simon Yeung"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: ""
+  abstract: ""
+
+- title: "What's it Like in Zero-g"
+  date: 2026-04-04T13:00:00-05:00
+  speakers: ["Amber Bakkum"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: ""
+  abstract: "Gravity is one of those things that we deal with regularly on Earth. We enjoy gravity on roller coasters but are annoyed with it when we’ve dropped our phone for the millionth time. What if we could just turn it off? In this talk, we’ll learn about ways we can simulate zero-g on Earth and several of the weird, least expected ways gravity shows up and what happens when we turn gravity “off”"
+
+- title: "Fiction as a Science Lab"
+  date: 2026-05-02T13:00:00-05:00
+  speakers: ["Aditya Ramdasi", "Laila Vreeschower", "Ingyin Khine"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: ""
+  abstract: ""
+
+
+
+
 # 2025 Fall
 - title: "The View from Above"
   date: 2025-09-27T13:00:00-05:00
