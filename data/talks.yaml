@@ -9,6 +9,46 @@
 #   abstract: ""
 
 
+# 2026 Fall
+- title: "Moons of the Solar System"
+  date: 2026-09-19T13:00:00-05:00
+  speakers: ["Leith Benali", "Simon Tang", "Laila Vleeschower"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: ""
+  abstract: ""
+
+  - title: "Lasers!"
+  date: 2026-10-17T13:00:00-05:00
+  speakers: ["Calvin Dear", "Caleb Ogle", "Jason Vazquez"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: ""
+  abstract: ""
+
+  - title: "White Holes: Echoes of a Horizon"
+  date: 2026-11-14T13:00:00-05:00
+  speakers: ["Aditya Ramdasi", "Avay Subedi"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: ""
+  abstract: ""
+
+  - title: "The Big Bang: From Hot to Not"
+  date: 2026-12-05T13:00:00-05:00
+  speakers: ["Raghav Girgaonkar", "Kyle Gourlie", "George Kharchilava"]
+  venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
+  venue_link: "https://maps.app.goo.gl/aQzRSpRRE9pNac1z9"
+  slides: ""
+  video: ""
+  abstract: ""
+
+
+
+
 # 2026 Spring
 - title: "Love Written in the Stars"
   date: 2026-02-14T13:00:00-05:00
