@@ -19,7 +19,7 @@
   video: ""
   abstract: ""
 
-  - title: "Lasers!"
+- title: "Lasers!"
   date: 2026-10-17T13:00:00-05:00
   speakers: ["Calvin Dear", "Caleb Ogle", "Jason Vazquez"]
   venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
@@ -28,7 +28,7 @@
   video: ""
   abstract: ""
 
-  - title: "White Holes: Echoes of a Horizon"
+- title: "White Holes: Echoes of a Horizon"
   date: 2026-11-14T13:00:00-05:00
   speakers: ["Aditya Ramdasi", "Avay Subedi"]
   venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
@@ -37,7 +37,7 @@
   video: ""
   abstract: ""
 
-  - title: "The Big Bang: From Hot to Not"
+- title: "The Big Bang: From Hot to Not"
   date: 2026-12-05T13:00:00-05:00
   speakers: ["Raghav Girgaonkar", "Kyle Gourlie", "George Kharchilava"]
   venue: "Anodyne Coffee Shop (224 W Bruce St, Milwaukee)"
