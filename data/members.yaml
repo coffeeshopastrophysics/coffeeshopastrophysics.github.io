@@ -100,6 +100,10 @@
 # ==================
 # Former Members
 # ==================
+- name: "Akash Anumarlapudi"
+  title: "Former Member"
+  former_member: true
+
 - name: "Lulu Agazie"
   title: "Graduate Student"
   image: "lulu_agazie.jpeg"
