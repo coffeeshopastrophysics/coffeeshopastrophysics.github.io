@@ -29,11 +29,35 @@
   former_member: false
   bio: "As a kid, I loved to stare at the night sky and watch aeroplanes sweep past what felt like gazillions of stars. In the final year of my undergraduate, I got a chance to explore the field of astronomy deeply and learn more about the structure and formation of tiny compact stars, named pulsars. This led me to pursue a PhD in using pulsars as probes to search for tiny ripples in spacetime, known as gravitational waves. Now I have joined the pulsar group at UW Milwaukee as a postdoctoral researcher. As a member of coffeeshop astrophysics, I am excited to share how incredible our Universe really is. Apart from research, I enjoy painting and exploring new places."
 
+- name: "Kyle Gourlie"
+  title: "Graduate Student"
+  image: "gourlie-kyle.jpg"
+  former_member: false
+  bio: "I have been always interested in gravity, but now I am just confused by it. I joined UWM in Fall of 2025. I work within the NANOGrav collaboration on the stochastic gravitational wave background and continuous waves from supermassive black hole binaries."
+
+- name: "Kokoro Hosogi"
+  title: "Graduate Student"
+  image: "hosogi-kokoro.jpg"
+  former_member: false
+  bio: "I did my undergrad at the University of Alabama in Huntsville and decided to come to UWM for my PhD in physics (which was a big transition coming from a hot southern weather btw). Since my undergrad, I have been doing galaxy studies and loving to look at gas floating inside galaxies. Outside research, I run, play piano, bake, and love discovering good music!"
+
+- name: "George Kharchilava"
+  title: "Graduate Student"
+  image: "kharchilava-george.jpg"
+  former_member: false
+  bio: "When I was a kid, I loved space and dinosaurs. But the dinosaurs died because they didn't have a space program."
+
 - name: "Caleb Ogle"
   title: "Graduate Student"
   image: "caleb_ogle.jpeg"
   former_member: false
   bio: "I came to UWM in the Fall of 2024 to research gravitational waves because they offer a new and unique lense with which to observe the universe. Currently, I'm part of our LIGO group and my research involves applications of machine learning on gravitational wave data. Outside of research I enjoy playing the guitar, going to the gym with friends, and everything about my crazy dog Nova."
+
+- name: "Aditya Ramdasi"
+  title: "Graduate Student"
+  image: "ramdasi-aditya.jpg"
+  former_member: false
+  bio: "I'm Aditya, originally from Pune, India, and am currently a graduate student at UWM's Department of Physics and Astronomy. My early interest in everything outer space and astrophysics morphed during my undergrad into studying how merging black holes and neutron stars send out ripples into the fabric of space and time itself i.e. gravitational waves. As part of UWM/CGCA's LIGO group, I study the astrophysics of black holes, neutron stars, and their mergers using gravitational wave data and simulations. Apart from academics, I'm a musician at heart and by training, for most of my life, so I spend time practicing, experimenting, and performing with my Tabla - a percussive instrument central to all Indian music. I also maintain avid interests in philosophy of physics, consciousness; formal logic; reading fantasy, science fiction, and playing cricket!"
 
 - name: "Tamal RoyChoudhury"
   title: "Graduate Student"
