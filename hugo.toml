@@ -1,4 +1,4 @@
-baseURL = 'https://coffeeshopastrophysics.github.io/'
+baseURL = 'https://coffee.uwm.edu/'
 relativeURLs = true
 canonifyURLs = true
 languageCode = 'en-us'
